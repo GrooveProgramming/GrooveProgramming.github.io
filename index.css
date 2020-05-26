@@ -1,5 +1,5 @@
 body {
  background-image: url("RockyBG.jpeg");
  background-repeat: no-repeat;
- background-size: 1000px 1000px;
+ background-size: cover;
 }
