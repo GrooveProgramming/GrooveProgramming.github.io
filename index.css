@@ -3,3 +3,7 @@ body {
  background-repeat: no-repeat;
  background-size: cover;
 }
+
+#title {
+ font-family: Arial, Helvetica, sans-serif;
+}
