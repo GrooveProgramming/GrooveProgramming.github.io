@@ -5,6 +5,12 @@ nav a:link {
     text-decoration: none;
 }
 
+/* Only effects edge and ie, makes all links green */
+nav a:visited {
+	color: #3d9c40;
+    text-decoration: none;
+}
+
 nav a:link:hover { color: #4CAF50; }
 
 /* Selected page */
