@@ -14,7 +14,7 @@ nav a:visited {
 nav a:link:hover { color: #4CAF50; }
 
 /* Selected page */
-nav li { color: #800080;}
+nav li { color: #337AFF;}
 
 nav ul {
 	list-style-type: none;
