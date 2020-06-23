@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@400;900&display=swap');
+
 body {
   background-color: #f5f5f5;
   font-family: 'Heebo', Arial, Helvetica, sans-serif;
@@ -99,4 +101,9 @@ input {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+
+.padded {
+  width: 40vw;
+  font-family: 'Heebo', Arial, Helvetica, sans-serif;
 }
