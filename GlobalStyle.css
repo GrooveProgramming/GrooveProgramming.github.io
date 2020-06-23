@@ -9,24 +9,28 @@ nav {
   width: max-content;
 }
 
-nav a:link {
-  color: #3d9c40;
+a {
+  color: #355070;
   text-decoration: none;
 }
 
-/* Only effects edge and ie, makes all links green */
-nav a:visited {
-  color: #3d9c40;
-  text-decoration: none;
-}
-
-nav a:link:hover {
+a:hover {
   color: #4CAF50;
+}
+
+/* Only effects Old Edge and IE */
+a:visited {
+  color: #355070;
+  text-decoration: none;
+}
+
+a:link:hover {
+  color: #355070;
 }
 
 /* Selected page */
 nav li {
-  color: #337AFF;
+  color: #e56b6f;
 }
 
 nav ul {
@@ -106,4 +110,13 @@ input {
 .padded {
   width: 40vw;
   font-family: 'Heebo', Arial, Helvetica, sans-serif;
+}
+
+.groove-logo {
+  width: 75vw;
+  max-width: 300px;
+}
+
+h2 {
+  color: #355070;
 }
