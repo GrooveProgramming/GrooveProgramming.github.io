@@ -1,0 +1,18 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>GrooveProgramming - 405</title>
+    <link href="GlobalStyle.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <script src="https://cdn.jsdelivr.net/npm/darkmode-js@1.5.6/lib/darkmode-js.min.js"></script>
+<script>
+  new Darkmode().showWidget();
+</script>
+    <center><a href="index.html"><img src="Groovelogo.svg" alt="Groove programming"></a>
+    <h1>405 You cannot view this page </h1>
+    <p>Click <a href="https://grooveprogramming.github.io">here</a> to return to the homepage.</p>
+    </center>
+  </body>
+</html>
