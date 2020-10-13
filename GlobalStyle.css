@@ -124,4 +124,7 @@ h2 {
 h1 {
   color: #355070;
 }
-
+#myDiv {
+  position:absolute;
+   bottom:0;
+}
