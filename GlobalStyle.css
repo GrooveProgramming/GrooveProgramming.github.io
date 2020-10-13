@@ -100,7 +100,7 @@ input {
   font-family: 'Heebo', Arial, Helvetica, sans-serif;
 }
 
-.landing {
+#landing {
   position: absolute;
   top: 100%;
   left: 50%;
