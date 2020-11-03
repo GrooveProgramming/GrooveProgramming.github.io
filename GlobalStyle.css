@@ -145,3 +145,16 @@ h1 {
   top: 725px;
 }
 
+.backbutton {
+  background-color: Transparent;
+  border: none;
+  color: black;
+  padding: 25px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 25px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 50%;
+}
