@@ -128,3 +128,20 @@ h1 {
   position:absolute;
    bottom:0;
 }
+.darkmodebutton {
+  background-color: #000000;
+  border: none;
+  color: black;
+  padding: 25px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 50%;
+  position: absolute;
+  left: 1235px;
+  top: 725px;
+}
+
