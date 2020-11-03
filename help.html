@@ -7,6 +7,7 @@
 </head>
 
 <body>
+	
 	<button class="darkmodebutton btn-toggle"></button>
 	<style>
 	
@@ -19,6 +20,18 @@ body.dark-theme {
   --bkg-color: #121212;
 }
 
+@media (prefers-color-scheme: dark) {
+  /* defaults to dark theme */
+  body {
+    --text-color: #eee;
+    --bkg-color: #121212;
+  }
+  body.light-theme {
+    --text-color: #222;
+    --bkg-color: #fff;
+  }
+}
+
 * {
   font-family: Arial, Helvetica, sans-serif;
 }
@@ -26,36 +39,49 @@ body.dark-theme {
 body {
   background: var(--bkg-color);
 }
-
 h1,
+h2,
+h3,
+h4,
+h5,
 p {
   color: var(--text-color);
 }
+
+body.dark-theme img {
+  filter: brightness(.8) contrast(1.2);
+}
+@media (prefers-color-scheme: dark) {
+  img {
+    filter: brightness(.8) contrast(1.2);
+  }
+}
+
 	</style>
 	<script>
 
 const btn = document.querySelector(".btn-toggle");
+const prefersDarkScheme = window.matchMedia("(prefers-color-scheme: dark)");
 
 const currentTheme = localStorage.getItem("theme");
-
-
 if (currentTheme == "dark") {
-
-  document.body.classList.add("dark-theme");
+  document.body.classList.toggle("dark-theme");
+} else if (currentTheme == "light") {
+  document.body.classList.toggle("light-theme");
 }
 
-btn.addEventListener("click", function() {
-
-  document.body.classList.toggle("dark-theme");
-  
-
-  let theme = "light";
-
-  if (document.body.classList.contains("dark-theme")) {
-
-    theme = "dark";
+btn.addEventListener("click", function () {
+  if (prefersDarkScheme.matches) {
+    document.body.classList.toggle("light-theme");
+    var theme = document.body.classList.contains("light-theme")
+      ? "light"
+      : "dark";
+  } else {
+    document.body.classList.toggle("dark-theme");
+    var theme = document.body.classList.contains("dark-theme")
+      ? "dark"
+      : "light";
   }
-
   localStorage.setItem("theme", theme);
 });
 		</script>
@@ -73,7 +99,7 @@ btn.addEventListener("click", function() {
 			</ul>
 		</nav>
 		<div class="text padded">
-			Got questions? Contact us on <a href="https://github.com/GrooveProgramming">GitHub</a>!
+			<h3>Got questions? Contact us on <a href="https://github.com/GrooveProgramming">GitHub</a>!</h3>
 		</div>
 	</center>
 </body>
