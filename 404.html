@@ -5,7 +5,7 @@
     <link href="GlobalStyle.css" rel="stylesheet" type="text/css" />
   </head>
   <body>
-    <button class="darkmodebutton btn-toggle"></button>
+	<button class="darkmodebutton btn-toggle"></button>
 		<style>
 		
 		body {
@@ -60,8 +60,14 @@
     <center><a href="index.html"><img src="Groovelogo.svg" alt="Groove programming"></a>
       <h1>404 Page Not Found</h1>
       Oh Noes! You're currently in an alternate universe.
-      Don't want to be here?
-       <p>Click <a href="https://grooveprogramming.github.io">here</a> to return to the homepage.</p>
+	  Don't want to be here?
+	  <br />
+	  <button onclick=backtopreviousPage() class="backbutton backtopreviousPage"><b><i>Go back to the previous page you were looking at <br /> or click the logo to go back to the main page.</i></b></button>
+	  <script>
+		  function backtopreviousPage() {
+			window.history.go(-1)
+		  }
+	  </script>
     </center>
   </body>
 </html>
