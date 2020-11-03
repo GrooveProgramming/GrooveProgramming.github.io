@@ -5,10 +5,58 @@
     <link href="GlobalStyle.css" rel="stylesheet" type="text/css" />
   </head>
   <body>
-    <script src="https://cdn.jsdelivr.net/npm/darkmode-js@1.5.6/lib/darkmode-js.min.js"></script>
-<script>
-  new Darkmode().showWidget();
-</script>
+    <button class="darkmodebutton btn-toggle"></button>
+		<style>
+		
+		body {
+	  --text-color: #222;
+	  --bkg-color: #fff;
+	}
+	body.dark-theme {
+	  --text-color: #eee;
+	  --bkg-color: #121212;
+	}
+	
+	* {
+	  font-family: Arial, Helvetica, sans-serif;
+	}
+	
+	body {
+	  background: var(--bkg-color);
+	}
+	
+	h1,
+	p {
+	  color: var(--text-color);
+	}
+		</style>
+		<script>
+	
+	const btn = document.querySelector(".btn-toggle");
+	
+	const currentTheme = localStorage.getItem("theme");
+	
+	
+	if (currentTheme == "dark") {
+	
+	  document.body.classList.add("dark-theme");
+	}
+	
+	btn.addEventListener("click", function() {
+	
+	  document.body.classList.toggle("dark-theme");
+	  
+	
+	  let theme = "light";
+	
+	  if (document.body.classList.contains("dark-theme")) {
+	
+		theme = "dark";
+	  }
+	
+	  localStorage.setItem("theme", theme);
+	});
+			</script>
     <center><a href="index.html"><img src="Groovelogo.svg" alt="Groove programming"></a>
       <h1>404 Page Not Found</h1>
       Oh Noes! You're currently in an alternate universe.
